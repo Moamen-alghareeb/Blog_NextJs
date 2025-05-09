@@ -1,11 +1,37 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: dark --default, forest;
+}
 
+@theme {
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  /* swatches theme hex */
+  --color-my-hover: #a9d9d0;
+  --color-my-hover-l: #f2e7dc;
+  --color-my-active: #038c7f;
+  --color-my-active-d: #027373;
+  --color-main-d: #0d0d0d;
+  --color-myGray: #2d3e40;
+  --color-myPetrol: #387373;
+  --color-myLightBlue: #93bfb7;
+  /* swatches theme hex */
+  --color-myLightGray: #97a6a0;
+  --color-my-hover-l2: #e4f2e7;
+
+  --color-my-red: #59252f;
+  --color-my-rose: #a66f7e;
+  --color-my-sky-blue: #9cd9d9;
+  --color-my-light-green: #435949;
+  --color-my-black: #0d0d0d;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -23,4 +49,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
