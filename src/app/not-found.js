@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function CustomNotFound() {
-  return <div>CustomNotFound</div>;
+  return <div>Main layout not found</div>;
 }

@@ -38,16 +38,19 @@ export default function Navbar() {
             open ? 'left-0' : 'left-full'
           }`}
         >
-          <Link href="#" onClick={() => setOpen(false)}>
+          <Link href="/" onClick={() => setOpen(false)}>
             Home
           </Link>
-          <Link href="/postlist" onClick={CloseBurger}>
+          <Link href="/posts" onClick={CloseBurger}>
             Posts
           </Link>
-          <Link href="#" onClick={CloseBurger}>
-            Most Popular
+          <Link href="/users" onClick={CloseBurger}>
+            Users
           </Link>
-          <Link href="#" onClick={CloseBurger}>
+          <Link href="/categories" onClick={CloseBurger}>
+            Categories
+          </Link>
+          <Link href="/about" onClick={CloseBurger}>
             About
           </Link>
           <Link
@@ -62,9 +65,21 @@ export default function Navbar() {
       {/* DeskTop MENU */}
 
       <div className="hidden md:flex flex-2/12 items-center justify-center gap-8 xl:gap-12 font-medium">
-        <Link href="/">Home</Link>
-        <Link href="postlist">Posts</Link>
-        <Link href="/about">About</Link>
+        <Link href="/" onClick={() => setOpen(false)}>
+          Home
+        </Link>
+        <Link href="/posts" onClick={CloseBurger}>
+          Posts
+        </Link>
+        <Link href="/users" onClick={CloseBurger}>
+          Users
+        </Link>
+        <Link href="/categories" onClick={CloseBurger}>
+          Categories
+        </Link>
+        <Link href="/about" onClick={CloseBurger}>
+          About
+        </Link>
       </div>
     </div>
   );
